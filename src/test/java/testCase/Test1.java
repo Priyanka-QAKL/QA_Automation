@@ -100,11 +100,10 @@ public class Test1 extends BaseTest {
 		}
 
 		//This is for sorting the list using prices
-		Collections.sort(details,Comparator.comparing(ProductDetail::getpPrice).reversed());
+		//Collections.sort(details,Comparator.comparing(ProductDetail::getpPrice).reversed());
 
 		//Print data into console
-		details.stream().forEach(p->{
-			System.out.println(p.getPsite()+"-----"+p.getpName()+"-----"+p.getpPrice()+"-----"+p.getpLink());});
+		//details.stream().forEach(p->{System.out.println(p.getPsite()+"-----"+p.getpName()+"-----"+p.getpPrice()+"-----"+p.getpLink());});
 
 		//Close browser
 		quit(driver);
